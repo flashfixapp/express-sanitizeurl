@@ -1,0 +1,35 @@
+{
+  "name": "@flashfix/express-sanitizeurl",
+  "description": "ExpressJS middleware that checks request URL for potentially breaking things",
+  "author": "flashfix <max@flashfix.app>",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "repository": "flashfixapp/express-sanitizeurl",
+  "bugs": "https://github.com/flashfixapp/express-sanitizeurl/issues",
+  "version": "1.0.1",
+  "keywords": [
+    "express",
+    "expressjs",
+    "middleware",
+    "query",
+    "querysting",
+    "sanitize"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "reinstall": "rm -rf node_modules package-lock.json && npm install",
+    "lint": "eslint ./",
+    "prepublishOnly": "npm test && npm run lint && echo \"\\033[0;32mReady to publish\\033[0m\"",
+    "test": "TZ='GMT' mocha"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^8.9.0",
+    "eslint-config-flashfix-base": "^1.0.1",
+    "mocha": "^9.2.2",
+    "sinon": "^13.0.1"
+  },
+  "dependencies": {
+    "debug": "^4.1.1"
+  }
+}
